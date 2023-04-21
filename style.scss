@@ -1,14 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap');
+
 html, body{
-    font-family: 'Poppins', sans-serif !important;
+    // font-family: 'Poppins', sans-serif !important;
+    font-family: 'Montserrat', sans-serif !important;
 }
 
 $priary-color: #FF6933;
+$secondary-color:#191919;
 
-.primary-color{
+
+.primary-color-bg{
     background: $priary-color !important;
 }
+.primary-color{
+    color: $priary-color;
+}
+
+.btn {
+    box-shadow: 0px 0px 24px 5px rgba(204, 63, 12, 0.5);
+    border-radius: 12px;
+}
+
+.dark-bg{
+    background: $secondary-color !important;
+}
+
+.light-bg{
+    background: rgba(255, 247, 242, 0.5);
+}
+
+
 .fw-500{
     font-weight: 500;
     
@@ -16,11 +39,23 @@ $priary-color: #FF6933;
 .fw-600{
     font-weight: 600;
 }
+.fw-800{
+    font-weight: 800;
+}
+
+.text-white{
+    color: #FFF7F2 !important;
+}
 
 header{
     .heading{
         font-size: 4rem;
-        line-height: 1.2;
+        line-height: 1.1;
+        font-weight: 800 !important;
+
+        @media screen and (max-width:768px) {
+            
+        }
     }
 }
 
@@ -42,3 +77,14 @@ header{
         font-size: 3rem;
     }
 }
+
+.card{
+    border-radius: 8px;
+    border: none !important;
+    box-shadow: 0 7px 21px rgba($color: #000000, $alpha: 0.08);
+    transition: ease-in-out .3s;
+    &:hover{
+        transform: translateY(-4px);
+    }
+}
+

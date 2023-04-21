@@ -1,10 +1,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
 html, body {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+.primary-color-bg {
+  background: #FF6933 !important;
 }
 
 .primary-color {
-  background: #FF6933 !important;
+  color: #FF6933;
+}
+
+.btn {
+  -webkit-box-shadow: 0px 0px 24px 5px rgba(204, 63, 12, 0.5);
+          box-shadow: 0px 0px 24px 5px rgba(204, 63, 12, 0.5);
+  border-radius: 12px;
+}
+
+.dark-bg {
+  background: #191919 !important;
+}
+
+.light-bg {
+  background: rgba(255, 247, 242, 0.5);
 }
 
 .fw-500 {
@@ -15,9 +34,18 @@ html, body {
   font-weight: 600;
 }
 
+.fw-800 {
+  font-weight: 800;
+}
+
+.text-white {
+  color: #FFF7F2 !important;
+}
+
 header .heading {
   font-size: 4rem;
-  line-height: 1.2;
+  line-height: 1.1;
+  font-weight: 800 !important;
 }
 
 .text-black {
@@ -33,5 +61,19 @@ header .heading {
 
 .heading div {
   font-size: 3rem;
+}
+
+.card {
+  border-radius: 8px;
+  border: none !important;
+  -webkit-box-shadow: 0 7px 21px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 7px 21px rgba(0, 0, 0, 0.08);
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
+}
+
+.card:hover {
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
 }
 /*# sourceMappingURL=style.css.map */
