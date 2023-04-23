@@ -88,3 +88,22 @@ header{
     }
 }
 
+
+.faq-header{
+    background: $priary-color;
+    font-weight: 600;
+    padding: 1rem;
+    border-radius: .75rem .75rem 0 0;
+}
+
+.faq-header-card {
+    border-radius: 0 0 .75rem .75rem !important;
+    line-height: 1.6;
+    padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    
+    &:hover {
+        transform: none;
+
+    }
+}
