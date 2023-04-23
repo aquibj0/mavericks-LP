@@ -54,6 +54,8 @@ header{
         font-weight: 800 !important;
 
         @media screen and (max-width:768px) {
+            font-size: 2.5rem;
+            line-height: 1.25 !important;
             
         }
     }
@@ -69,12 +71,22 @@ header{
         aspect-ratio: 16/9;
         width: 65%;
         border-radius: 8px;
+
+        @media screen and (max-width:768px) {
+                width: 90%;
+            }
     }
 }
 
 .heading{
     div{
         font-size: 3rem;
+
+        @media screen and (max-width:768px) {
+            font-size: 2.5rem;
+            line-height: 1.2 !important;
+            margin-bottom: 1rem;
+        }
     }
 }
 
@@ -105,5 +117,10 @@ header{
     &:hover {
         transform: none;
 
+    }
+}
+@media screen and (max-width:768px) {
+    .order-range{
+        order: 2;
     }
 }

@@ -48,6 +48,13 @@ header .heading {
   font-weight: 800 !important;
 }
 
+@media screen and (max-width: 768px) {
+  header .heading {
+    font-size: 2.5rem;
+    line-height: 1.25 !important;
+  }
+}
+
 .text-black {
   color: #000 !important;
 }
@@ -59,8 +66,22 @@ header .heading {
   border-radius: 8px;
 }
 
+@media screen and (max-width: 768px) {
+  .video iframe {
+    width: 90%;
+  }
+}
+
 .heading div {
   font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .heading div {
+    font-size: 2.5rem;
+    line-height: 1.2 !important;
+    margin-bottom: 1rem;
+  }
 }
 
 .card {
@@ -94,5 +115,13 @@ header .heading {
 .faq-header-card:hover {
   -webkit-transform: none;
           transform: none;
+}
+
+@media screen and (max-width: 768px) {
+  .order-range {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
 }
 /*# sourceMappingURL=style.css.map */
