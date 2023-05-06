@@ -46,6 +46,14 @@ header .heading {
   font-size: 4rem;
   line-height: 1.1;
   font-weight: 800 !important;
+  background: #FF6933;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#F09819), to(#FF6933));
+  background: linear-gradient(to right, #F09819, #FF6933);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media screen and (max-width: 768px) {
@@ -113,6 +121,11 @@ header .heading {
 }
 
 .faq-header-card:hover {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.how-it-works .card:hover {
   -webkit-transform: none;
           transform: none;
 }
