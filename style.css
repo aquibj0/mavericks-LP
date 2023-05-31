@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800&display=swap");
 html, body {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
+  overflow-x: hidden;
 }
 
 .primary-color-bg {
@@ -13,8 +14,7 @@ html, body {
 }
 
 .btn {
-  -webkit-box-shadow: 0px 0px 24px 5px rgba(204, 63, 12, 0.5);
-          box-shadow: 0px 0px 24px 5px rgba(204, 63, 12, 0.5);
+  box-shadow: 0px 0px 24px 5px rgba(204, 63, 12, 0.5);
   border-radius: 12px;
 }
 
@@ -49,13 +49,11 @@ header .heading {
   background: #FF6933;
   /* fallback for old browsers */
   /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#F09819), to(#FF6933));
   background: linear-gradient(to right, #F09819, #FF6933);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-
 @media screen and (max-width: 768px) {
   header .heading {
     font-size: 2.5rem;
@@ -73,7 +71,6 @@ header .heading {
   width: 65%;
   border-radius: 8px;
 }
-
 @media screen and (max-width: 768px) {
   .video iframe {
     width: 90%;
@@ -83,7 +80,6 @@ header .heading {
 .heading div {
   font-size: 3rem;
 }
-
 @media screen and (max-width: 768px) {
   .heading div {
     font-size: 2.5rem;
@@ -95,46 +91,36 @@ header .heading {
 .card {
   border-radius: 8px;
   border: none !important;
-  -webkit-box-shadow: 0 7px 21px rgba(0, 0, 0, 0.08);
-          box-shadow: 0 7px 21px rgba(0, 0, 0, 0.08);
-  -webkit-transition: ease-in-out .3s;
-  transition: ease-in-out .3s;
+  box-shadow: 0 7px 21px rgba(0, 0, 0, 0.08);
+  transition: ease-in-out 0.3s;
 }
-
 .card:hover {
-  -webkit-transform: translateY(-4px);
-          transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .faq-header {
   background: #FF6933;
   font-weight: 600;
   padding: 1rem;
-  border-radius: .75rem .75rem 0 0;
+  border-radius: 0.75rem 0.75rem 0 0;
 }
 
 .faq-header-card {
-  border-radius: 0 0 .75rem .75rem !important;
+  border-radius: 0 0 0.75rem 0.75rem !important;
   line-height: 1.6;
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
 }
-
 .faq-header-card:hover {
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 
 .how-it-works .card:hover {
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
 
 @media screen and (max-width: 768px) {
   .order-range {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
